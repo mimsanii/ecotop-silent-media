@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOTOP SILENT MEDIA videography & photography</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <h1>ECOTOP SILENT MEDIA</h1>
+            <ul>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Capturing Moments, Creating Memories</h1>
+            <p>Explore stunning photography and videography that tell a story</p>
+            <a href="#portfolio" class="hero-button">View My Work</a>
+        </div>
+    </section>
+    
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="gallery">
+            <!-- Sample Photo Thumbnails -->
+            <div class="gallery-item">
+                <img src="photo1.jpg" alt="Sample Photo 1">
+            </div>
+            <div class="gallery-item">
+                <img src="photo2.jpg" alt="Sample Photo 2">
+            </div>
+            <div class="gallery-item">
+                <img src="photo3.jpg" alt="Sample Photo 3">
+            </div>
+    
+            <!-- Sample Video Thumbnails -->
+            <div class="gallery-item">
+                <video controls>
+                    <source src="video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- About Section -->
+    <section id="bio">
+        <h2>About Me</h2>
+        <p>Hello! I'm a passionate photographer and videographer dedicated to capturing life's most beautiful moments. With a keen eye for detail and a love for storytelling, I aim to create work that resonates and inspires.</p>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Have questions or want to book a session? Fill out the form below, and I'll get back to you as soon as possible!</p>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Thank you for your message! I'll get back to you soon.");
+            document.getElementById("contact-form").reset();
+        });
+    </script>
+     
+</body>
+</html>
